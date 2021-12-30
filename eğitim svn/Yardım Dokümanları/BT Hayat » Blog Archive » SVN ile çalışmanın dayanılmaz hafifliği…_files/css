@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr-TR">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="/favicon.ico"> 
+<title>BT Hayat  &raquo; Blog Archive   &raquo; CSS: Float nesnelerde kalan genişliği kullanmak</title>
+
+<link rel="stylesheet" href="http://bthayat.net/wp-content/themes/hair-tyson/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="BT Hayat RSS Feed" href="http://bthayat.net/feed/" />
+<link rel="pingback" href="http://bthayat.net/xmlrpc.php" />
+
+<style type="text/css" media="screen">
+
+
+</style>
+
+<link rel="alternate" type="application/rss+xml" title="BT Hayat &raquo; Beslemesi" href="http://bthayat.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="BT Hayat &raquo; Yorum Beslemesi" href="http://bthayat.net/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="BT Hayat &raquo; CSS: Float nesnelerde kalan genişliği kullanmak Yorum Beslemesi" href="http://bthayat.net/2011/11/css-float-nesnelerde-kalan-genisligi-kullanmak/feed/" />
+<link rel='stylesheet' id='fancybox-css'  href='http://bthayat.net/wp-content/plugins/fancybox-gallery/fancybox/jquery.fancybox.css?ver=3.5' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-override-css'  href='http://bthayat.net/wp-content/plugins/fancybox-gallery/fbg-override.css?ver=3.5' type='text/css' media='all' />
+<link rel='stylesheet' id='NextGEN-css'  href='http://bthayat.net/wp-content/plugins/nextgen-gallery/css/nggallery.css?ver=1.0.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='shutter-css'  href='http://bthayat.net/wp-content/plugins/nextgen-gallery/shutter/shutter-reloaded.css?ver=1.3.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='jetpack-widgets-css'  href='http://bthayat.net/wp-content/plugins/jetpack/modules/widgets/widgets.css?ver=20121003' type='text/css' media='all' />
+<link rel='stylesheet' id='really_simple_share_style-css'  href='http://bthayat.net/wp-content/plugins/really-simple-facebook-twitter-share-buttons/style.css?ver=3.5' type='text/css' media='all' />
+<script type='text/javascript' src='http://bthayat.net/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script>
+<script type='text/javascript' src='http://bthayat.net/wp-content/plugins/simple-google-analytics/js/sga.js?ver=3.5'></script>
+<script type='text/javascript' src='http://bthayat.net/wp-content/plugins/fancybox-gallery/fancybox/jquery.fancybox-1.2.1.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://bthayat.net/wp-content/plugins/fancybox-gallery/fancybox/jquery.easing.1.3.js?ver=1.3'></script>
+<script type='text/javascript' src='https://platform.twitter.com/widgets.js?ver=3.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var shutterSettings = {"msgLoading":"L O A D I N G","msgClose":"Click to Close","imageCount":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://bthayat.net/wp-content/plugins/nextgen-gallery/shutter/shutter-reloaded.js?ver=1.3.3'></script>
+<script type='text/javascript' src='http://bthayat.net/wp-content/plugins/nextgen-gallery/js/jquery.cycle.all.min.js?ver=2.9995'></script>
+<script type='text/javascript' src='http://bthayat.net/wp-content/plugins/nextgen-gallery/js/ngg.slideshow.min.js?ver=1.06'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://bthayat.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://bthayat.net/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Tgrt-FM iPhone/iPad uygulamasının yeni sürümü nihayet yolda..' href='http://bthayat.net/2011/11/tgrt-fm-iphoneipad-uygulamasinin-yeni-surumu-nihayet-yolda/' />
+<link rel='next' title='Tgrt-FM iPhone/iPad uygulaması 3. sürümü yayında' href='http://bthayat.net/2011/11/tgrt-fm-iphoneipad-uygulamasi-3-surumu-yayinda/' />
+<meta name="generator" content="WordPress 3.5" />
+<link rel='canonical' href='http://bthayat.net/2011/11/css-float-nesnelerde-kalan-genisligi-kullanmak/' />
+<link rel='shortlink' href='http://wp.me/pZTq3-90' />
+<!-- <meta name="NextGEN" version="1.9.10" /> -->
+<script type="text/javascript">
+		  window.___gcfg = {lang: "en"};
+		  (function() {
+		    var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+		    po.src = "https://apis.google.com/js/plusone.js";
+		    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+<!-- Simple Google Analytics Begin -->
+<script type="text/javascript">
+var _gaq = [['_setAccount','UA-36654497-1'],['_trackPageview']];(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!-- Simple Google Analytics End -->
+<link rel="stylesheet" type="text/css" href="http://bthayat.net/wp-content/plugins/wp-code-highlight/css/.css" media="screen" />
+<link id='MediaRSS' rel='alternate' type='application/rss+xml' title='NextGEN Gallery RSS Feed' href='http://bthayat.net/wp-content/plugins/nextgen-gallery/xml/media-rss.php' />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="CSS: Float nesnelerde kalan genişliği kullanmak" />
+<meta property="og:url" content="http://bthayat.net/2011/11/css-float-nesnelerde-kalan-genisligi-kullanmak/" />
+<meta property="og:description" content="Mevzu başlıktaki gibi kolay ve tek satırda hallolmuyor malesef. Amacım resimde gördüğünüz gibi yanyana iki div koymak ve bunlardan birisi sabit genişlikte iken diğer div&#8217;in kalan alanın tamam..." />
+<meta property="og:site_name" content="BT Hayat" />
+<meta property="og:image" content="http://bthayat.net/wp-content/uploads/2011/11/Screen-Shot-2011-11-27-at-4.49.35-AM-150x150.png" />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+</head>
+<body id=body>
+<script type="text/javascript">
+ var _kmq = _kmq || [];
+ function _kms(u){
+   setTimeout(function(){
+     var s = document.createElement('script'); var f = document.getElementsByTagName('script')[0]; s.type = 'text/javascript'; s.async = true;
+     s.src = u; f.parentNode.insertBefore(s, f);
+   }, 1);
+ }
+ _kms('//i.kissmetrics.com/i.js');_kms('//doug1izaerwt3.cloudfront.net/61bb75823b5912ce34429f6480a9e4fabf3b087b.1.js');
+</script>
+<div id="page">
+
+<div id=anaheader>
+<div id="header">	
+<h1><a href="http://bthayat.net/">BT Hayat</a></h1>
+<div id="maindescription">BT&#039;cinin hayatı</div>
+</div>
+<div id="header2">
+<div id="searchbar">
+<table border="0" width="93%"><tr><td align="left">
+<form method="get" id="searchform" action="http://bthayat.net/">
+<input type="text" onfocus="this.value=''" value="Arama" name="s" id="s" class="searchcss" />
+<input type="submit" id="searchsubmit" value="->" /> 
+</form></td><td align="right">
+<a href="/?feed=rss2"">
+<img src="http://bthayat.net/wp-content/themes/hair-tyson/images/rss.png" border="0" align="right" /></a>
+</td>
+</tr></table>
+</div>
+</div>
+
+<div style="clear:both"></div> <!-- bunu da ben ekledim -->
+</div><!-- ana header sonu -->
+
+	<div id="content" class="narrowcolumn">
+
+	
+		
+
+		<div class="post" id="post-558">
+			
+			<div class="titleborder">
+				<h2>CSS: Float nesnelerde kalan genişliği kullanmak</h2>
+			</div>
+
+			<div class="entry">
+				<div style="height:33px;" class="really_simple_share robots-nocontent snap_nopreview"><div class="really_simple_share_facebook_like" style="width:100px;"><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fbthayat.net%2F2011%2F11%2Fcss-float-nesnelerde-kalan-genisligi-kullanmak%2F&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;height=27&amp;locale=en_US" 
+						scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:27px;" allowTransparency="true"></iframe></div><div class="really_simple_share_google1" style="width:80px;"><div class="g-plusone" data-size="medium" data-href="http://bthayat.net/2011/11/css-float-nesnelerde-kalan-genisligi-kullanmak/" ></div></div><div class="really_simple_share_twitter" style="width:100px;"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" 
+						data-text="CSS: Float nesnelerde kalan genişliği kullanmak" data-url="http://bthayat.net/2011/11/css-float-nesnelerde-kalan-genisligi-kullanmak/" 
+						data-via=""  ></a></div></div>
+		<div style="clear:both;"></div><p><a href="http://bthayat.net/wp-content/uploads/2011/11/Screen-Shot-2011-11-27-at-4.49.35-AM.png"><img class="alignleft size-thumbnail wp-image-559" title="Screen Shot 2011-11-27 at 4.49.35 AM" src="http://bthayat.net/wp-content/uploads/2011/11/Screen-Shot-2011-11-27-at-4.49.35-AM-150x150.png" alt="" width="150" height="150" /></a>Mevzu başlıktaki gibi kolay ve tek satırda hallolmuyor malesef. Amacım resimde gördüğünüz gibi yanyana iki div koymak ve bunlardan birisi sabit genişlikte iken diğer div&#8217;in kalan alanın tamamını kullanmasını sağlamak.</p>
+<p>Fatih Hayrioğlu&#8217;nun sitesinde bulamayınca Google&#8217;da aradım ama Türkçe örnekler malesef netice vermedi. Stackoverflow.com&#8217;da <a href="http://stackoverflow.com/questions/446060/css-two-divs-next-to-each-other" target="_blank">şu sayfadaki</a> Andres kullanıcısının örneği işe yaradı.</p>
+<p>Bu işlem için evvela bu iki div&#8217;i taşıyacak bir div daha gerekiyor. Dışardaki div&#8217;e dar ve sabit genişlikli olan div kadar padding-left vermek gerekiyor ki geniş alan bu mesafeden başlasın ve %100 genişliğine sahip olmasına rağmen padding&#8217;den dolayı sadece kalan alanı kullanabilsin. Bu kısım çalıştığında aslında işin zor kısmı bitmiş oluyor.  Geniş olan div&#8217;in sabit bir alan hariç tüm ekrana yayılmasını sağladık.</p>
+<p>İkinci olarak da dar ve sabit genişliğe sahip div&#8217;i kapsayıcı alandaki padding&#8217;den oluşan boşluğa konumlandırmak gerekiyor. Normalde bu div de ana div&#8217;in içerisinde yer aldığından padding-left&#8217;ten etkilenecektir. Bu etkiyi sıfırlamak için kendi genişliği kadar negatif değerli margin-left kullanıp kendini taşıyan div&#8217;in dışına çıkmasını sağlamalıyız. Bu kadar.</p>
+<p>Örnek:</p>
+<p>CSS</p>
+<blockquote><p>.kutu {<br />
+height: 200px;<br />
+padding-left: 260px;<br />
+}</p>
+<p>.kutu .dar {<br />
+height: 200px;<br />
+width: 260px;<br />
+margin-left: -260px;<br />
+background-color:blue;<br />
+float:left;<br />
+}</p>
+<p>.kutu .genis {<br />
+float: left;<br />
+height: 200px;<br />
+width: 100%;<br />
+background-color:green;<br />
+}</p></blockquote>
+<p>HTML</p>
+<blockquote><p>&lt;div class=kutu&gt;<br />
+&lt;div class=dar&gt;Dar&lt;/div&gt;<br />
+&lt;div class=genis&gt;Genis&lt;/div&gt;<br />
+&lt;/div&gt;</p></blockquote>
+<p>Örnek dosyayı indirmek için <a href="http://www.bthayat.net/css_float_kalan_alani_kullanmak.html" target="_blank">tıklayın</a>.</p>
+
+								
+				<div class="entryfooterborder" style='clear:both'>
+									</div>				
+
+				<div class="navigation">
+				<div class="alignleft">&laquo; <a href="http://bthayat.net/2011/11/tgrt-fm-iphoneipad-uygulamasinin-yeni-surumu-nihayet-yolda/" rel="prev">Tgrt-FM iPhone/iPad uygulamasının yeni sürümü nihayet yolda..</a></div>
+				<div class="alignright"><a href="http://bthayat.net/2011/11/tgrt-fm-iphoneipad-uygulamasi-3-surumu-yayinda/" rel="next">Tgrt-FM iPhone/iPad uygulaması 3. sürümü yayında</a> &raquo;</div>
+				</div>				
+
+				
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+
+			<!-- If comments are open, but there are no comments. -->
+
+	 
+
+
+<h3 id="respond">Yorum yazın</h3>
+
+
+<form action="http://bthayat.net/wp-comments-post.php" method="post" id="commentform">
+
+
+<div id="formleft">
+<p><input type="text" name="author" id="author" onfocus="this.value=''" value="adınız" size="22" tabindex="1" aria-required='true' />
+</p>
+
+<p><input type="text" name="email" id="email" onfocus="this.value=''" value="e-postanız (yayınlanmaz)" size="22" tabindex="2" aria-required='true' />
+</p>
+
+<p><input type="text" name="url" id="url" onfocus="this.value=''" value="web siteniz" size="22" tabindex="3" />
+</p>
+</div>
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+<div id="formright">
+<textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value='Yorumu Gönder' />
+<input type="hidden" name="comment_post_ID" value="558" />
+</p>
+</div>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="fbfcbd056a" /></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments" style="display: inline;">Beni sonraki yorumlar için e-posta ile bilgilendir.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog" style="display: inline;">Beni yeni yazılarda e-posta ile bilgilendir.</label></p>
+</form>
+
+
+
+	
+	</div>
+	<div id="sidebar">
+	<li id="pages-3" class="widget widget_pages"><h2 class="widgettitle">Sayfalar</h2>		<ul>
+			<li class="page_item page-item-2"><a href="http://bthayat.net/about/">BT Hayat deyince..</a></li>
+<li class="page_item page-item-516"><a href="http://bthayat.net/kimdir/">Kimdir?</a></li>
+		</ul>
+		</li><li id="categories-3" class="widget widget_categories"><h2 class="widgettitle">Kategoriler</h2>		<ul>
+	<li class="cat-item cat-item-237"><a href="http://bthayat.net/category/arduino/" title="Arduino kategorisi altındaki tüm yazıları göster">Arduino</a>
+</li>
+	<li class="cat-item cat-item-225"><a href="http://bthayat.net/category/css/" title="CSS kategorisi altındaki tüm yazıları göster">CSS</a>
+</li>
+	<li class="cat-item cat-item-141"><a href="http://bthayat.net/category/ders-notlari/" title="Ders Notları kategorisi altındaki tüm yazıları göster">Ders Notları</a>
+</li>
+	<li class="cat-item cat-item-65"><a href="http://bthayat.net/category/eski-gunler/" title="Eski günler kategorisi altındaki tüm yazıları göster">Eski günler</a>
+</li>
+	<li class="cat-item cat-item-111"><a href="http://bthayat.net/category/game-2/" title="Game kategorisi altındaki tüm yazıları göster">Game</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://bthayat.net/category/genel/" title="Genel kategorisi altındaki tüm yazıları göster">Genel</a>
+</li>
+	<li class="cat-item cat-item-286"><a href="http://bthayat.net/category/hayat/" title="Hayat kategorisi altındaki tüm yazıları göster">Hayat</a>
+</li>
+	<li class="cat-item cat-item-182"><a href="http://bthayat.net/category/ios/" title="iOS kategorisi altındaki tüm yazıları göster">iOS</a>
+</li>
+	<li class="cat-item cat-item-112"><a href="http://bthayat.net/category/ipad-2/" title="iPad kategorisi altındaki tüm yazıları göster">iPad</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://bthayat.net/category/iphone/" title="Iphone kategorisi altındaki tüm yazıları göster">Iphone</a>
+</li>
+	<li class="cat-item cat-item-63"><a href="http://bthayat.net/category/ipucu/" title="ipucu kategorisi altındaki tüm yazıları göster">ipucu</a>
+</li>
+	<li class="cat-item cat-item-185"><a href="http://bthayat.net/category/javascript/" title="Javascript kategorisi altındaki tüm yazıları göster">Javascript</a>
+</li>
+	<li class="cat-item cat-item-76"><a href="http://bthayat.net/category/kendime-not/" title="Kendime Not kategorisi altındaki tüm yazıları göster">Kendime Not</a>
+</li>
+	<li class="cat-item cat-item-131"><a href="http://bthayat.net/category/kitap/" title="Kitap kategorisi altındaki tüm yazıları göster">Kitap</a>
+</li>
+	<li class="cat-item cat-item-45"><a href="http://bthayat.net/category/mac/" title="Mac kategorisi altındaki tüm yazıları göster">Mac</a>
+</li>
+	<li class="cat-item cat-item-287"><a href="http://bthayat.net/category/mongodb/" title="MongoDB kategorisi altındaki tüm yazıları göster">MongoDB</a>
+</li>
+	<li class="cat-item cat-item-55"><a href="http://bthayat.net/category/mysql/" title="mySQL kategorisi altındaki tüm yazıları göster">mySQL</a>
+</li>
+	<li class="cat-item cat-item-102"><a href="http://bthayat.net/category/oyun/" title="Oyun kategorisi altındaki tüm yazıları göster">Oyun</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://bthayat.net/category/php/" title="PHP kategorisi altındaki tüm yazıları göster">PHP</a>
+</li>
+	<li class="cat-item cat-item-144"><a href="http://bthayat.net/category/saglik/" title="Sağlık kategorisi altındaki tüm yazıları göster">Sağlık</a>
+</li>
+	<li class="cat-item cat-item-199"><a href="http://bthayat.net/category/shell-2/" title="Shell kategorisi altındaki tüm yazıları göster">Shell</a>
+</li>
+	<li class="cat-item cat-item-116"><a href="http://bthayat.net/category/sinema/" title="Sinema kategorisi altındaki tüm yazıları göster">Sinema</a>
+</li>
+	<li class="cat-item cat-item-120"><a href="http://bthayat.net/category/steve-jobs/" title="Steve Jobs kategorisi altındaki tüm yazıları göster">Steve Jobs</a>
+</li>
+	<li class="cat-item cat-item-291"><a href="http://bthayat.net/category/urun/" title="Ürün kategorisi altındaki tüm yazıları göster">Ürün</a>
+</li>
+	<li class="cat-item cat-item-226"><a href="http://bthayat.net/category/uygulama-2/" title="Uygulama kategorisi altındaki tüm yazıları göster">Uygulama</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://bthayat.net/category/web/" title="Web kategorisi altındaki tüm yazıları göster">Web</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://bthayat.net/category/windows/" title="Windows kategorisi altındaki tüm yazıları göster">Windows</a>
+</li>
+		</ul>
+</li><li id="twitter-vjck" class="widget widget_twitter_vjck"><h2 class="widgettitle">Twitter</h2><div id="widget_twitter_vjck" ><ul><div id="twitter_time_line"  style="width:100%; overflow:hidden;" ><script type="text/javascript">function flip_twitter_image(arg) {var targetTagID = window.document.getElementById(arg); var styleStr = (window.document.documentElement.getAttribute("style") == window.document.documentElement.style) ? targetTagID.style.cssText : targetTagID.getAttribute( "style" ); var nonString = styleStr.match( /display:.*?none;/g ); var nonPos = nonString ? styleStr.indexOf( nonString ) : -1; if( nonPos >= 0 ) { styleStr = styleStr.substring( 0, nonPos ) + styleStr.substring( nonPos + nonString.length, styleStr.length ); styleStr = styleStr + "display:block;"; }else{ var blkString = styleStr.match( /display:.*?block;/g ); var blkPos = blkString ? styleStr.indexOf( blkString ) : -1; if( blkPos >= 0 ) { styleStr = styleStr.substring( 0, blkPos ) + styleStr.substring( blkPos + blkString.length, styleStr.length ); } styleStr = styleStr + "display:none;"; } if( styleStr ) { if( window.document.documentElement.getAttribute("style") == window.document.documentElement.style ) { targetTagID.style.cssText = styleStr; }else{ targetTagID.setAttribute( "style", styleStr); }}}</script><li>I'm at İstanbul Dünya Ticaret Merkezi (İstanbul, Türkiye) w/ 37 others <br /><a href="http://t.co/urvqOwoV" target="_blank" >http://t.co/urvqOwoV</a></li><li>I'm at Ubit (Istanbul) <br /><a href="http://t.co/N0mdukUG" target="_blank" >http://t.co/N0mdukUG</a></li><li>I'm at İstanbul Dünya Ticaret Merkezi (İstanbul, Türkiye) w/ 40 others <br /><a href="http://t.co/k6sosztG" target="_blank" >http://t.co/k6sosztG</a></li></div></ul></div></li>		<li id="recent-posts-3" class="widget widget_recent_entries">		<h2 class="widgettitle">Son Yazılar</h2>		<ul>
+					<li>
+				<a href="http://bthayat.net/2013/01/javascript-ile-veri-sorgulama-linq/" title="Javascript ile veri sorgulama: LINQ">Javascript ile veri sorgulama: LINQ</a>
+						</li>
+					<li>
+				<a href="http://bthayat.net/2012/12/robotix-co/" title="Robotix.co">Robotix.co</a>
+						</li>
+					<li>
+				<a href="http://bthayat.net/2012/11/leyla-ile-mecnun/" title="Leyla ile Mecnun">Leyla ile Mecnun</a>
+						</li>
+					<li>
+				<a href="http://bthayat.net/2012/10/karakuyruk-iphone-uygulamasi-yayinda/" title="Karakuyruk iPhone Uygulaması yayında">Karakuyruk iPhone Uygulaması yayında</a>
+						</li>
+					<li>
+				<a href="http://bthayat.net/2012/09/objective-c-nsnotificationcenter-ile-veri-aktarma/" title="Objective-C NSNotificationCenter ile veri aktarma">Objective-C NSNotificationCenter ile veri aktarma</a>
+						</li>
+				</ul>
+		</li><li id="archives-3" class="widget widget_archive"><h2 class="widgettitle">Arşivler</h2>		<ul>
+			<li><a href='http://bthayat.net/2013/01/' title='Ocak 2013'>Ocak 2013</a></li>
+	<li><a href='http://bthayat.net/2012/12/' title='Aralık 2012'>Aralık 2012</a></li>
+	<li><a href='http://bthayat.net/2012/11/' title='Kasım 2012'>Kasım 2012</a></li>
+	<li><a href='http://bthayat.net/2012/10/' title='Ekim 2012'>Ekim 2012</a></li>
+	<li><a href='http://bthayat.net/2012/09/' title='Eylül 2012'>Eylül 2012</a></li>
+	<li><a href='http://bthayat.net/2012/08/' title='Ağustos 2012'>Ağustos 2012</a></li>
+	<li><a href='http://bthayat.net/2012/07/' title='Temmuz 2012'>Temmuz 2012</a></li>
+	<li><a href='http://bthayat.net/2012/06/' title='Haziran 2012'>Haziran 2012</a></li>
+	<li><a href='http://bthayat.net/2012/05/' title='Mayıs 2012'>Mayıs 2012</a></li>
+	<li><a href='http://bthayat.net/2012/04/' title='Nisan 2012'>Nisan 2012</a></li>
+	<li><a href='http://bthayat.net/2012/03/' title='Mart 2012'>Mart 2012</a></li>
+	<li><a href='http://bthayat.net/2012/02/' title='Şubat 2012'>Şubat 2012</a></li>
+	<li><a href='http://bthayat.net/2012/01/' title='Ocak 2012'>Ocak 2012</a></li>
+	<li><a href='http://bthayat.net/2011/12/' title='Aralık 2011'>Aralık 2011</a></li>
+	<li><a href='http://bthayat.net/2011/11/' title='Kasım 2011'>Kasım 2011</a></li>
+	<li><a href='http://bthayat.net/2011/10/' title='Ekim 2011'>Ekim 2011</a></li>
+	<li><a href='http://bthayat.net/2011/09/' title='Eylül 2011'>Eylül 2011</a></li>
+	<li><a href='http://bthayat.net/2011/08/' title='Ağustos 2011'>Ağustos 2011</a></li>
+	<li><a href='http://bthayat.net/2011/07/' title='Temmuz 2011'>Temmuz 2011</a></li>
+	<li><a href='http://bthayat.net/2011/06/' title='Haziran 2011'>Haziran 2011</a></li>
+	<li><a href='http://bthayat.net/2011/03/' title='Mart 2011'>Mart 2011</a></li>
+	<li><a href='http://bthayat.net/2011/02/' title='Şubat 2011'>Şubat 2011</a></li>
+	<li><a href='http://bthayat.net/2011/01/' title='Ocak 2011'>Ocak 2011</a></li>
+	<li><a href='http://bthayat.net/2010/12/' title='Aralık 2010'>Aralık 2010</a></li>
+	<li><a href='http://bthayat.net/2010/11/' title='Kasım 2010'>Kasım 2010</a></li>
+	<li><a href='http://bthayat.net/2010/10/' title='Ekim 2010'>Ekim 2010</a></li>
+	<li><a href='http://bthayat.net/2010/09/' title='Eylül 2010'>Eylül 2010</a></li>
+	<li><a href='http://bthayat.net/2010/08/' title='Ağustos 2010'>Ağustos 2010</a></li>
+	<li><a href='http://bthayat.net/2010/07/' title='Temmuz 2010'>Temmuz 2010</a></li>
+	<li><a href='http://bthayat.net/2010/05/' title='Mayıs 2010'>Mayıs 2010</a></li>
+	<li><a href='http://bthayat.net/2010/04/' title='Nisan 2010'>Nisan 2010</a></li>
+	<li><a href='http://bthayat.net/2010/03/' title='Mart 2010'>Mart 2010</a></li>
+	<li><a href='http://bthayat.net/2010/02/' title='Şubat 2010'>Şubat 2010</a></li>
+	<li><a href='http://bthayat.net/2010/01/' title='Ocak 2010'>Ocak 2010</a></li>
+		</ul>
+</li><li id="recent-comments-3" class="widget widget_recent_comments"><h2 class="widgettitle">Son Yorumlar</h2><ul id="recentcomments"><li class="recentcomments"><a href="http://bthayat.net/2012/10/karakuyruk-iphone-uygulamasi-yayinda/comment-page-1/#comment-1699">Karakuyruk iPhone Uygulaması yayında</a> için admin</li><li class="recentcomments"><a href="http://bthayat.net/2012/10/karakuyruk-iphone-uygulamasi-yayinda/comment-page-1/#comment-1698">Karakuyruk iPhone Uygulaması yayında</a> için <a href='http://websiteniz' rel='external nofollow' class='url'>civelek</a></li><li class="recentcomments"><a href="http://bthayat.net/2012/11/leyla-ile-mecnun/comment-page-1/#comment-1686">Leyla ile Mecnun</a> için <a href='http://www.kadinsanat.net/2012/12/haftasonu-gezmeleri-leyla-ile-mecnun-seti/' rel='external nofollow' class='url'>Haftasonu Gezmeleri, Leyla ile Mecnun Seti - Kadın Sanat -dekorasyon, yemek, gezi, kültür sanat, kadınca</a></li><li class="recentcomments"><a href="http://bthayat.net/2012/01/11-yil-sonra-elektronige-donus-arduino/comment-page-1/#comment-1683">11 Yıl Sonra Elektroniğe Dönüş: Arduino</a> için <a href='http://blog.robotix.co/2012/12/ses-ses-deneme-1-2/' rel='external nofollow' class='url'>Ses ses.. Deneme 1-2 | Robotix</a></li><li class="recentcomments"><a href="http://bthayat.net/2012/01/11-yil-sonra-elektronige-donus-arduino/comment-page-1/#comment-1682">11 Yıl Sonra Elektroniğe Dönüş: Arduino</a> için <a href='http://blog.robotix.co/2012/12/ilk-adim/' rel='external nofollow' class='url'>İlk adım&#8230;</a></li></ul></li><li id="linkcat-2" class="widget widget_links"><h2 class="widgettitle">Bloglar</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.selcukhoca.com" rel="friend met" title="Bir Öğretmenin Günlüğü" target="_blank">Bir Öğretmenin Günlüğü</a></li>
+<li><a href="http://oyungani.com/" target="_blank">Biraz da oyun: Oyun Gani</a></li>
+<li><a href="http://www.dilekkosker.com" rel="friend co-worker" title="Grafik, Tasarım">Dilek Köşker</a></li>
+<li><a href="http://www.gezentigiller.com" title="Eşimle birlikte gezdiğimiz yerleri yayınladığımız bir blog..">Gezentigiller</a></li>
+<li><a href="http://www.kadinsanat.net" title="Eşimin kadın bloğu.. Bayan BT&#8217;ciler için">Kadınsanat</a></li>
+<li><a href="http://karakuyruk.com" rel="me" title="Instagram kedisi" target="_blank">Karakuyruk</a></li>
+<li><a href="http://www.metin.co" rel="co-worker" title="Web, CSS, Hayat, Memat" target="_blank">Metin Ata&#039;nın Günlüğü</a></li>
+<li><a href="http://www.mobilstore.org" title="Windows Mobile cihazlar için hazırladığımız uygulama dükkanı">Mobilstore</a></li>
+<li><a href="http://blog.robotix.co" rel="me" title="Arduino ile ilgili blogum" target="_blank">Robotix</a></li>
+<li><a href="http://blog.tercih.tv" rel="co-worker" title="Lise ve Üniversite Tercih Rehberi Sitesi http://tercih.tv&#8217;nin blogu" target="_blank">Tercih.tv Blog</a></li>
+<li><a href="http://arge.ubit.com.tr" rel="friend co-worker" title="Ubit, Ar-Ge Ekibi şirket blogu" target="_blank">Ubit Ar-Ge</a></li>
+<li><a href="http://ubitblog.wordpress.com" title="Çalıştığım iş yerinin blogu.. Eğlenceli">Ubit Blog</a></li>
+
+	</ul>
+</li>
+<li id="calendar-3" class="widget widget_calendar"><h2 class="widgettitle">Takvim</h2><div id="calendar_wrap"><table id="wp-calendar">
+	<caption>Kasım 2011</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Pazartesi">Pts</th>
+		<th scope="col" title="Salı">Sal</th>
+		<th scope="col" title="Çarşamba">Çar</th>
+		<th scope="col" title="Perşembe">Per</th>
+		<th scope="col" title="Cuma">Cum</th>
+		<th scope="col" title="Cumartesi">Cts</th>
+		<th scope="col" title="Pazar">Paz</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://bthayat.net/2011/10/" title="Ekim 2011 için yazıları göster">&laquo; Eki</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next"><a href="http://bthayat.net/2011/12/" title="Aralık 2011 için yazıları göster">Ara &raquo;</a></td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="1" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+	</tr>
+	<tr>
+		<td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td><a href="http://bthayat.net/2011/11/12/" title="Hello Siri!">12</a></td><td>13</td>
+	</tr>
+	<tr>
+		<td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td><a href="http://bthayat.net/2011/11/20/" title="Kas Hastalıkları Derneği, Farkındalık Toplantısı">20</a></td>
+	</tr>
+	<tr>
+		<td><a href="http://bthayat.net/2011/11/21/" title="Tgrt-FM iPhone/iPad uygulamasının yeni sürümü nihayet yolda..">21</a></td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td><a href="http://bthayat.net/2011/11/27/" title="CSS: Float nesnelerde kalan genişliği kullanmak">27</a></td>
+	</tr>
+	<tr>
+		<td><a href="http://bthayat.net/2011/11/28/" title="Tgrt-FM iPhone/iPad uygulaması 3. sürümü yayında">28</a></td><td>29</td><td>30</td>
+		<td class="pad" colspan="4">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></li>		</ul>
+	</div>
+
+	<!--WP Code Highlight_start-->
+	<script type="text/javascript">
+		window.onload = function(){prettyPrint();};
+	</script>
+	<script type="text/javascript" src="http://bthayat.net/wp-content/plugins/wp-code-highlight/js/wp-code-highlight.js"></script>
+	<!--WP Code Highlight_end-->
+<hr />
+<div id="footer">
+	<p>		
+  		<li class="page_item page-item-2"><a href="http://bthayat.net/about/">BT Hayat deyince..</a></li>
+<li class="page_item page-item-516"><a href="http://bthayat.net/kimdir/">Kimdir?</a></li>
+<br />
+  		Wordpress Theme Designed by <a href="http://hairtyson.com">Hair Tyson</a></p>
+</div>
+</div>
+
+		<!-- Infolinks START -->
+		<script type="text/javascript">
+		   var infolink_pid =300423; var infolink_wsid = 0;
+		</script>
+		<script type="text/javascript" src="http://resources.infolinks.com/js/infolinks_main.js"></script>
+		
+		<!-- Infolinks END -->	<div style="display:none">
+	</div>
+<script type='text/javascript' src='http://bthayat.net/wp-content/plugins/fancybox-gallery/fbg-init.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://lite.piclens.com/current/piclens_optimized.js?ver=3.5'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201304'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2013Janaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://bthayat.net/wp-content/plugins/jetpack/modules/wpgroho.js?ver=3.5'></script>
+
+	<script src="http://stats.wordpress.com/e-201304.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:2.1.1',blog:'14751043',post:'558',tz:'2'});
+	var load_cmc = function(){linktracker_init(14751043,558,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script></body>
+</html>

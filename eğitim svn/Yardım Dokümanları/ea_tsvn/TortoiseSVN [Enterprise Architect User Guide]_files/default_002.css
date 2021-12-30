@@ -1,0 +1,294 @@
+/* Text Styles */
+hr { color: #000000}
+body, table /* Normal */
+{
+ font-size: 9pt;
+ font-family: 'Arial';
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.f_BodyText /* BodyText */
+{
+}
+span.f_Bulletlist1 /* Bullet list 1 */
+{
+}
+span.f_Bulletlist2 /* Bullet list 2 */
+{
+}
+span.f_Bulletlist3 /* Bullet list 3 */
+{
+}
+span.f_Bullet1First /* Bullet1 First */
+{
+ color: ;
+}
+span.f_Bullet1Last /* Bullet1 Last */
+{
+ color: ;
+}
+span.f_Code /* Code */
+{
+ font-size: 8pt;
+ font-family: 'Courier';
+ color: #000000;
+}
+span.f_CodeExample /* Code Example */
+{
+ font-size: 8pt;
+ font-family: 'Courier New';
+ color: #000000;
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_Glossaryitem /* Glossaryitem */
+{
+ font-style: italic;
+ font-weight: bold;
+}
+span.f_Glossarytext /* Glossarytext */
+{
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 11pt;
+ font-weight: bold;
+ color: #003399;
+}
+span.f_ImageCaption /* Image Caption */
+{
+ font-size: 8pt;
+ font-weight: bold;
+}
+span.f_MenuKeyField /* MenuKeyField */
+{
+ font-weight: bold;
+}
+span.f_NormalText /* Normal Text */
+{
+ color: #000000;
+}
+span.f_NoteBulletlist /* Note Bullet list  */
+{
+ font-style: italic;
+}
+span.f_NoteHyperLink /* Note HyperLink */
+{
+ font-style: italic;
+ color: #0000ff;
+ text-decoration: underline;
+}
+span.f_Notes /* Notes */
+{
+}
+span.f_NumberedList /* Numbered List */
+{
+ color: #000000;
+}
+span.f_OMGText /* OMGText */
+{
+ font-style: italic;
+ color: #000000;
+}
+span.f_SeeAlso /* SeeAlso */
+{
+ font-weight: bold;
+ color: #000066;
+ text-decoration: underline;
+}
+span.f_SubHeadingL1 /* Sub Heading L1 */
+{
+ font-size: 11pt;
+ font-weight: bold;
+ color: #003399;
+}
+span.f_SubHeadingL2 /* Sub Heading L2 */
+{
+ font-size: 10pt;
+ font-weight: bold;
+}
+span.f_Tableheader /* Tableheader */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.f_Tabletext /* Tabletext */
+{
+}
+span.f_TextIndentedL1 /* Text Indented L1 */
+{
+ color: #000000;
+}
+span.f_TextIndentedL2 /* Text Indented L2 */
+{
+ color: #000000;
+}
+span.f_TiporNote /* Tip or Note */
+{
+ font-weight: bold;
+ color: #000066;
+}
+span.f_TiporNoteinnumlist /* Tip or Note in numlist */
+{
+ font-style: italic;
+ color: #000000;
+}
+span.f_TiporNoteText /* Tip or Note Text */
+{
+ color: #000066;
+}
+span.f_UIControl /* UI Control */
+{
+ color: #ff2b2b;
+}
+span.f_WhiteHyperlink /* WhiteHyperlink */
+{
+ font-size: 8pt;
+ color: #ffffff;
+}
+/* Paragraph styles */
+p /* Normal */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 13px;
+}
+.p_BodyText /* BodyText */
+{
+ margin: 5px 0px 5px 13px;
+}
+.p_Bulletlist1 /* Bullet list 1 */
+{
+ text-indent: -17px;
+ margin: 3px 0px 0px 30px;
+}
+.p_Bulletlist2 /* Bullet list 2 */
+{
+ text-indent: -17px;
+ margin: 3px 0px 0px 48px;
+}
+.p_Bulletlist3 /* Bullet list 3 */
+{
+ text-indent: -17px;
+ margin: 3px 0px 0px 65px;
+}
+.p_Bullet1First /* Bullet1 First */
+{
+ text-indent: -17px;
+ margin: 0px 0px 0px 30px;
+}
+.p_Bullet1Last /* Bullet1 Last */
+{
+ text-indent: -17px;
+ margin: 3px 0px 3px 30px;
+}
+.p_Code /* Code */
+{
+ margin: 0px 0px 0px 27px;
+}
+.p_CodeExample /* Code Example */
+{
+ white-space: nowrap;
+ margin: 0px 0px 0px 0px;
+}
+.p_Comment /* Comment */
+{
+}
+.p_Glossaryitem /* Glossaryitem */
+{
+ margin: 6px 0px 0px 13px;
+}
+.p_Glossarytext /* Glossarytext */
+{
+ margin: 0px 0px 5px 48px;
+}
+.p_Heading1 /* Heading1 */
+{
+ margin: 5px 0px 0px 0px;
+}
+.p_ImageCaption /* Image Caption */
+{
+}
+.p_MenuKeyField /* MenuKeyField */
+{
+}
+.p_NormalText /* Normal Text */
+{
+ margin: 0px 0px 19px 48px;
+}
+.p_NoteBulletlist /* Note Bullet list  */
+{
+ text-indent: -17px;
+ margin: 3px 0px 0px 69px;
+}
+.p_NoteHyperLink /* Note HyperLink */
+{
+ margin: 0px 0px 0px 53px;
+}
+.p_Notes /* Notes */
+{
+}
+.p_NumberedList /* Numbered List */
+{
+ text-indent: -21px;
+ margin: 5px 0px 0px 48px;
+}
+.p_OMGText /* OMGText */
+{
+ margin: 5px 0px 5px 13px;
+}
+.p_SeeAlso /* SeeAlso */
+{
+ margin: 14px 0px 0px 13px;
+}
+.p_SubHeadingL1 /* Sub Heading L1 */
+{
+ margin: 14px 0px 0px 2px;
+}
+.p_SubHeadingL2 /* Sub Heading L2 */
+{
+ margin: 10px 0px 0px 13px;
+}
+.p_Tableheader /* Tableheader */
+{
+ margin: 5px 0px 5px 2px;
+}
+.p_Tabletext /* Tabletext */
+{
+ margin: 4px 2px 4px 2px;
+}
+.p_TextIndentedL1 /* Text Indented L1 */
+{
+ margin: 0px 0px 19px 0px;
+}
+.p_TextIndentedL2 /* Text Indented L2 */
+{
+ margin: 14px 0px 14px 13px;
+}
+.p_TiporNote /* Tip or Note */
+{
+ border-color: #c8cdde;
+ border-style: solid;
+ border-width: 2px;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ margin: 4px 0px 2px 1px;
+}
+.p_TiporNoteinnumlist /* Tip or Note in numlist */
+{
+ margin: 5px 0px 5px 48px;
+}
+.p_TiporNoteText /* Tip or Note Text */
+{
+ margin: 1px 0px 7px 1px;
+}
+.p_WhiteHyperlink /* WhiteHyperlink */
+{
+ text-align: right;
+ margin: 0px 0px 0px 0px;
+}

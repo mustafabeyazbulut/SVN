@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!-- saved from url=(0085)http://www.harezmi.com.tr/hangi-svn-dizin-yap%C4%B1s%C4%B1n%C4%B1-tercih-ediyorsunuz/ -->
+<html dir="ltr" lang="tr-TR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Hangi SVN Dizin Yapısını Tercih Ediyorsunuz? | Harezmi Bilişim Çözümleri</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" type="text/css" media="all" href="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/style.css">
+<link rel="pingback" href="http://www.harezmi.com.tr/wp-harezmi/xmlrpc.php">
+<link rel="alternate" type="application/rss+xml" title="Harezmi Bilişim Çözümleri » Feed" href="http://www.harezmi.com.tr/feed/">
+<link rel="alternate" type="application/rss+xml" title="Harezmi Bilişim Çözümleri » Comments Feed" href="http://www.harezmi.com.tr/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Harezmi Bilişim Çözümleri » Hangi SVN Dizin Yapısını Tercih Ediyorsunuz? Comments Feed" href="http://www.harezmi.com.tr/hangi-svn-dizin-yap%c4%b1s%c4%b1n%c4%b1-tercih-ediyorsunuz/feed/">
+<script type="text/javascript" async="" src="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/ga.js"></script><script type="text/javascript" src="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/comment-reply.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.harezmi.com.tr/wp-harezmi/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.harezmi.com.tr/wp-harezmi/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Spring Konfigürasyonu: XML mi, Annotasyonlar mı, Yoksa Java mı?" href="http://www.harezmi.com.tr/spring-konfig%c3%bcrasyonu-xml-mi-annotasyonlar-m%c4%b1-yoksa-java-m%c4%b1/">
+<link rel="next" title="POST’lasak da mı saklasak yoksa PUT’lasak da mı saklasak?" href="http://www.harezmi.com.tr/postlasak-da-m%c4%b1-saklasak-yoksa-putlasak-da-m%c4%b1-saklasak/">
+<meta name="generator" content="WordPress 3.3">
+<link rel="canonical" href="http://www.harezmi.com.tr/hangi-svn-dizin-yap%c4%b1s%c4%b1n%c4%b1-tercih-ediyorsunuz/">
+<link rel="shortlink" href="http://www.harezmi.com.tr/?p=764">
+<script type="text/javascript" src="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/tw-sack.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+function alo_em_pubblic_form ()
+{
+//edit : added all this for
+  var alo_cf_array = new Array();
+      document.alo_easymail_widget_form.submit.value="gönderiliyor...";
+  document.alo_easymail_widget_form.submit.disabled = true;
+  document.getElementById('alo_em_widget_loading').style.display = "inline";
+  document.getElementById('alo_easymail_widget_feedback').innerHTML = "";
+  
+   var alo_em_sack = new sack("http://www.harezmi.com.tr/wp-harezmi/wp-admin/admin-ajax.php" );    
+
+  alo_em_sack.execute = 1;
+  alo_em_sack.method = 'POST';
+  alo_em_sack.setVar( "action", "alo_em_pubblic_form_check" );
+  alo_em_sack.setVar( "alo_em_opt_name", document.alo_easymail_widget_form.alo_em_opt_name.value );
+  alo_em_sack.setVar( "alo_em_opt_email", document.alo_easymail_widget_form.alo_em_opt_email.value );
+    
+  alo_em_sack.setVar( "alo_em_error_email_incorrect", "Email adresinizi kontrol ediniz");
+  alo_em_sack.setVar( "alo_em_error_name_empty", "İsim alanı boş bırakılmamalıdır.");
+    alo_em_sack.setVar( "alo_em_error_email_added", "Dikkat: Bu mail adresi daha önce kaydedilmiş fakat aktfileştirilmemiş görünüyor. Şimdi size yeni bir aktivasyon maili gönderiyoruz.");
+  alo_em_sack.setVar( "alo_em_error_email_activated", "Dikkat: Bu mail adresi zaten mail listemizde kayıtlıdır");
+  alo_em_sack.setVar( "alo_em_error_on_sending", "Gönderirken hata oluştu: Lütfen tekrar deneyin");
+  alo_em_sack.setVar( "alo_em_txt_ok", "Aboneliğiniz başarıyla etkinleştirildi.  Bir sonraki haber bültenini alacaksınız. Teşekkür ederiz.");
+  alo_em_sack.setVar( "alo_em_txt_subscribe", "Abone Ol");
+  alo_em_sack.setVar( "alo_em_lang_code", "tr");  
+  
+  var cbs = document.getElementById('alo_easymail_widget_form').getElementsByTagName('input');
+  var length = cbs.length;
+  var lists = "";
+  for (var i=0; i < length; i++) {
+  	if (cbs[i].name == 'alo_em_form_lists' +'[]' && cbs[i].type == 'checkbox') {
+  		if ( cbs[i].checked ) lists += cbs[i].value + ",";
+  	}
+  }
+  alo_em_sack.setVar( "alo_em_form_lists", lists );
+  alo_em_sack.onError = function() { alert('Ajax error' )};
+  alo_em_sack.runAJAX();
+
+  return true;
+
+} 
+//]]>
+</script>
+
+<meta http-equiv="Content-Language" content="tr-TR">
+<style type="text/css" media="screen">
+.qtrans_flag span { display:none }
+.qtrans_flag { height:12px; width:18px; display:block }
+.qtrans_flag_and_text { padding-left:20px }
+.qtrans_flag_tr { background:url(http://www.harezmi.com.tr/wp-harezmi/wp-content/plugins/qtranslate/flags/tr.png) no-repeat }
+.qtrans_flag_en { background:url(http://www.harezmi.com.tr/wp-harezmi/wp-content/plugins/qtranslate/flags/gb.png) no-repeat }
+</style>
+<link hreflang="en" href="http://www.harezmi.com.tr/hangi-svn-dizin-yap%C4%B1s%C4%B1n%C4%B1-tercih-ediyorsunuz/?lang=en" rel="alternate">
+<link rel="stylesheet" type="text/css" href="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/shCore.css"><link rel="stylesheet" type="text/css" href="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/shThemeDefault.css"><meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2803864-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body class="single single-post postid-764 single-format-standard">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="http://www.harezmi.com.tr/" title="Harezmi Bilişim Çözümleri" rel="home">Harezmi Bilişim Çözümleri</a>
+					</span>
+				</div>
+				<div id="site-description">Değer üretir…</div>
+
+										<img src="" width="940" height="0" alt="">
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="http://www.harezmi.com.tr/hangi-svn-dizin-yap%C4%B1s%C4%B1n%C4%B1-tercih-ediyorsunuz/#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu"><ul><li class="page_item page-item-23"><a href="http://www.harezmi.com.tr/">Ana Sayfa</a></li><li class="page_item page-item-8"><a href="http://www.harezmi.com.tr/hizmetler/">Hizmetler</a></li><li class="page_item page-item-10"><a href="http://www.harezmi.com.tr/egitimler/">Eğitimler</a></li><li class="page_item page-item-2"><a href="http://www.harezmi.com.tr/about/">Hakkımızda</a></li><li class="page_item page-item-466"><a href="http://www.harezmi.com.tr/kariyer/">Kariyer</a></li><li class="page_item page-item-74"><a href="http://www.harezmi.com.tr/referanslar/">Referanslar</a></li><li class="page_item page-item-102 current_page_parent"><a href="http://www.harezmi.com.tr/blog/">Blog</a></li><li class="page_item page-item-14"><a href="http://www.harezmi.com.tr/iletisim/">İletişim</a></li></ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://www.harezmi.com.tr/spring-konfig%c3%bcrasyonu-xml-mi-annotasyonlar-m%c4%b1-yoksa-java-m%c4%b1/" rel="prev"><span class="meta-nav">←</span> Spring Konfigürasyonu: XML mi, Annotasyonlar mı, Yoksa Java mı?</a></div>
+					<div class="nav-next"><a href="http://www.harezmi.com.tr/postlasak-da-m%c4%b1-saklasak-yoksa-putlasak-da-m%c4%b1-saklasak/" rel="next">POST’lasak da mı saklasak yoksa PUT’lasak da mı saklasak? <span class="meta-nav">→</span></a></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-764" class="post-764 post type-post status-publish format-standard hentry category-uncategorized">
+					<h1 class="entry-title">Hangi SVN Dizin Yapısını Tercih Ediyorsunuz?</h1>
+
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://www.harezmi.com.tr/hangi-svn-dizin-yap%c4%b1s%c4%b1n%c4%b1-tercih-ediyorsunuz/" title="3:10 pm" rel="bookmark"><span class="entry-date">January 11, 2013</span></a> <span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://www.harezmi.com.tr/author/ksevindik/" title="View all posts by Kenan Sevindik">Kenan Sevindik</a></span>					</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<p>SVN ile çalışırken iki dizin yapısı karşımıza çıkıyor. Bunlardan ilki</p>
+<div><div id="highlighter_869110" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">repo/</code></div><div class="line number2 index1 alt1"><code class="xml plain">repo/trunk/project1</code></div><div class="line number3 index2 alt2"><code class="xml plain">repo/trunk/project2</code></div><div class="line number4 index3 alt1"><code class="xml plain">repo/tags</code></div><div class="line number5 index4 alt2"><code class="xml plain">repo/tags/...</code></div><div class="line number6 index5 alt1"><code class="xml plain">repo/branches</code></div><div class="line number7 index6 alt2"><code class="xml plain">repo/branches/...</code></div></div></td></tr></tbody></table></div></div>
+<p>şeklindedir. Çoğunlukla da bu yapı tercih edilmektedir. Bu yapıda trunk, tags ve branches dizinlerini her proje için tekrar tekrar oluşturma külfeti ortadan kalkmaktadır. Ayrıca bütün trunk’ın bir komut ile tag’lenmesi veya branch’ının oluşturulması da oldukça kolaydır.</p>
+<p>Diğeri ise</p>
+<div><div id="highlighter_414465" class="syntaxhighlighter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">repo/project1</code></div><div class="line number2 index1 alt1"><code class="xml plain">repo/project1/trunk</code></div><div class="line number3 index2 alt2"><code class="xml plain">repo/project1/tags</code></div><div class="line number4 index3 alt1"><code class="xml plain">repo/project1/branches</code></div><div class="line number5 index4 alt2"><code class="xml plain">repo/project2</code></div><div class="line number6 index5 alt1"><code class="xml plain">repo/project2/trunk</code></div><div class="line number7 index6 alt2"><code class="xml plain">repo/project2/tags</code></div><div class="line number8 index7 alt1"><code class="xml plain">repo/project2/branches</code></div></div></td></tr></tbody></table></div></div>
+<p>şeklindedir. Bu yapının diğer bir dezavantajı ise farklı iki projenin aynı isimli dosyaları varsa bunların tek bir branch veya tag altında toplanması zorlaşmaktadır.</p>
+<p>İkinci dizin yapısını ilkine göre daha avantajlı kılan en önemli şey ise kullanıcıların SVN’e proje bazlı erişimlerinin sağlanmasıdır. SVN ile “path based” yetkilendirme uygulanabilmektedir. Bu apache üzerinden de mümkündür. Path based yetkilendirme de belirli bir dizin altına herhangi bir kullanıcı veya kullanıcı grubunun okuma veya yazma yetkileri ile erişimlerine imkan sağlanır. İkinci dizin yapısı sayesinde bir projeye ait trunk, tag ve braches dizinlerine tek seferde erişim yetkisi tanımlamak daha kolay hale gelmektedir.</p>
+<div id="crp_related"><h3>You might also be interested in reading:</h3><ul><li><a href="http://www.harezmi.com.tr/jboss-jbpm-admin-console-i/" rel="bookmark" class="crp_title">JBoss JBPM Admin Console-I</a></li><li><a href="http://www.harezmi.com.tr/ortak-tomcat-kurulumu-%c3%bczerinden-birden-fazla-instance-%c3%a7al%c4%b1%c5%9ft%c4%b1rmak/" rel="bookmark" class="crp_title">Ortak Tomcat Kurulumu Üzerinden Birden Fazla Instance Çalıştırmak</a></li><li><a href="http://www.harezmi.com.tr/spring-konfig%c3%bcrasyonu-xml-mi-annotasyonlar-m%c4%b1-yoksa-java-m%c4%b1/" rel="bookmark" class="crp_title">Spring Konfigürasyonu: XML mi, Annotasyonlar mı, Yoksa Java mı?</a></li><li><a href="http://www.harezmi.com.tr/haziran-ay%c4%b1nda-java-teknoloji-saati/" rel="bookmark" class="crp_title">Haziran Ayında Java Teknoloji Saati</a></li><li><a href="http://www.harezmi.com.tr/yazilim-projelerinde-iletisim-kanallari/" rel="bookmark" class="crp_title">&gt;Yazılım Projelerinde İletişim Kanalları</a></li><li><a href="http://www.harezmi.com.tr/spring-security-ile-ayni-kullanicinin-oturum-sayisini-yonetmek/" rel="bookmark" class="crp_title">Spring Security ile Aynı Kullanıcının Oturum Sayısını Yönetmek</a></li><li><a href="http://www.harezmi.com.tr/hibernate-mi-jpa-mi/" rel="bookmark" class="crp_title">Hibernate mi, JPA mı?</a></li><li><a href="http://www.harezmi.com.tr/fraktal-ve-composite/" rel="bookmark" class="crp_title">Fraktal ve Composite</a></li><li><a href="http://www.harezmi.com.tr/sadece-ne-gerekiyorsa-onu-kullanin/" rel="bookmark" class="crp_title">Sadece Ne Gerekiyorsa Onu Kullanın</a></li><li><a href="http://www.harezmi.com.tr/spring-resource-konsepti/" rel="bookmark" class="crp_title">&gt;Spring Resource Konsepti</a></li></ul></div>											</div><!-- .entry-content -->
+
+
+					<div class="entry-utility">
+						This entry was posted in <a href="http://www.harezmi.com.tr/category/uncategorized/" title="View all posts in Uncategorized" rel="category tag">Uncategorized</a>. Bookmark the <a href="http://www.harezmi.com.tr/hangi-svn-dizin-yap%c4%b1s%c4%b1n%c4%b1-tercih-ediyorsunuz/" title="Permalink to Hangi SVN Dizin Yapısını Tercih Ediyorsunuz?" rel="bookmark">permalink</a>.											</div><!-- .entry-utility -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://www.harezmi.com.tr/spring-konfig%c3%bcrasyonu-xml-mi-annotasyonlar-m%c4%b1-yoksa-java-m%c4%b1/" rel="prev"><span class="meta-nav">←</span> Spring Konfigürasyonu: XML mi, Annotasyonlar mı, Yoksa Java mı?</a></div>
+					<div class="nav-next"><a href="http://www.harezmi.com.tr/postlasak-da-m%c4%b1-saklasak-yoksa-putlasak-da-m%c4%b1-saklasak/" rel="next">POST’lasak da mı saklasak yoksa PUT’lasak da mı saklasak? <span class="meta-nav">→</span></a></div>
+				</div><!-- #nav-below -->
+
+				
+			<div id="comments">
+
+
+
+
+								<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://www.harezmi.com.tr/hangi-svn-dizin-yap%C4%B1s%C4%B1n%C4%B1-tercih-ediyorsunuz/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://www.harezmi.com.tr/wp-harezmi/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name</label> <span class="required">*</span><input id="author" name="author" type="text" value="" size="30" aria-required="true"></p>
+<p class="comment-form-email"><label for="email">Email</label> <span class="required">*</span><input id="email" name="email" type="text" value="" size="30" aria-required="true"></p>
+<p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" type="text" value="" size="30"></p>
+
+<div class="captchaSizeDivLarge"><img id="si_image_com" class="si-captcha" src="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/securimage_show.php" width="175" height="60" alt="Güvenlik Kodunun Resmi" title="Güvenlik Kodunun Resmi">
+    <input id="si_code_com" name="si_code_com" type="hidden" value="46pzue8fM7ft1yhv">
+    <div id="si_refresh_com">
+<a href="http://www.harezmi.com.tr/hangi-svn-dizin-yap%C4%B1s%C4%B1n%C4%B1-tercih-ediyorsunuz/#" rel="nofollow" title="Yeni Resim Göster" onclick="si_captcha_refresh(&#39;si_image_com&#39;,&#39;com&#39;,&#39;/wp-harezmi/wp-content/plugins/si-captcha-for-wordpress/captcha&#39;,&#39;http://www.harezmi.com.tr/wp-harezmi/wp-content/plugins/si-captcha-for-wordpress/captcha/securimage_show.php?difficulty=2&amp;si_form_id=com&amp;prefix=&#39;); return false;">
+      <img class="captchaImgRefresh" src="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/refresh.png" width="22" height="20" alt="Yeni Resim Göster" onclick="this.blur();"></a>
+  </div>
+  </div>
+<br>
+<p><input id="captcha_code" name="captcha_code" type="text" size="6">
+<label id="captcha_code_label" for="captcha_code">CAPTCHA Code</label><span class="required"> *</span>
+</p>												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="d82e8-comment" cols="45" rows="8" aria-required="true"></textarea><textarea name="comment" style="display:none" rows="1" cols="1"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href="" title=""&gt; &lt;abbr title=""&gt; &lt;acronym title=""&gt; &lt;b&gt; &lt;blockquote cite=""&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=""&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=""&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment">
+							<input type="hidden" name="comment_post_ID" value="764" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+						</p>
+											</form>
+							</div><!-- #respond -->
+						
+</div><!-- #comments -->
+ 
+
+
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="search-2" class="widget-container widget_search"><form role="search" method="get" id="searchform" action="http://www.harezmi.com.tr/">
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s">
+	<input type="submit" id="searchsubmit" value="Search">
+	</div>
+	</form></li><li id="qtranslate-2" class="widget-container widget_qtranslate"><ul class="qtrans_language_chooser" id="qtranslate-2-chooser"><li class="active"><a href="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri.htm" class="qtrans_flag_tr qtrans_flag_and_text"><span>Türkçe</span></a></li><li><a href="http://www.harezmi.com.tr/hangi-svn-dizin-yap%C4%B1s%C4%B1n%C4%B1-tercih-ediyorsunuz/?lang=en" class="qtrans_flag_en qtrans_flag_and_text"><span>English</span></a></li></ul><div class="qtrans_widget_end"></div></li><li id="alo-easymail-widget-3" class="widget-container alo_easymail_widget"><h3 class="widget-title">Newsletter</h3><div id="alo_em_widget_loading" class="alo_em_widget_loading" style="display:none;"><img src="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/wpspin_light.gif" alt="" style="vertical-align:middle"> gönderiliyor...</div>
+<div id="alo_easymail_widget_feedback"></div>
+<form name="alo_easymail_widget_form" id="alo_easymail_widget_form" class="alo_easymail_widget_form alo_easymail_widget_form_public" method="post" action="" onsubmit="alo_em_pubblic_form();return false;">
+<table class="alo_easymail_form_table"><tbody>
+  <tr>
+    <td><label for="opt_name">İsim</label></td>    <td><input type="text" name="alo_em_opt_name" value="" id="opt_name" maxlength="50" class="input-text"></td>
+  </tr>
+  <tr>
+    <td><label for="opt_email">E-Posta</label></td>
+    <td><input type="text" name="alo_em_opt_email" value="" id="opt_email" maxlength="50" class="input-text"></td>
+  </tr>
+</tbody></table>
+<div class="alo_easymail_lists_table">Düzenleyeceğimiz etkinliklerden, eğitimlerimizden ve diğer aktivitelerden haberdar olmak için:<br><table><tbody>
+<tr><td><input type="checkbox" name="alo_em_form_lists[]" id="alo_em_form_list_1" value="1" class="input-checkbox"></td><td><label for="alo_em_form_list_1" value="1">Harezmi Bilişim Çözümleri Duyurular</label></td></tr>
+</tbody></table>
+</div>
+<input type="submit" name="submit" value="Abone Ol" class="input-submit">
+</form>
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="site-info">
+				<a href="http://www.harezmi.com.tr/" title="Harezmi Bilişim Çözümleri" rel="home">
+					Harezmi Bilişim Çözümleri				</a>
+			</div><!-- #site-info -->
+
+			<div id="site-generator">
+								<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform" rel="generator">
+					Proudly powered by WordPress.				</a>
+			</div><!-- #site-generator -->
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<script type="text/javascript" src="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/si_captcha.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+var si_captcha_styles = "\
+<!-- begin SI CAPTCHA Anti-Spam - comment form style -->\
+<style type='text/css'>\
+div#captchaImgDiv { display:block; }\
+.captchaSizeDivSmall { width:175px; height:45px; padding-top:10px; }\
+.captchaSizeDivLarge { width:250px; height:60px; padding-top:10px; }\
+img#si_image_com,#si_image_reg,#si_image_log,#si_image_side_login { border-style:none; margin:0; padding-right:5px; float:left; }\
+.captchaImgRefresh { border-style:none; margin:0; vertical-align:bottom; }\
+div#captchaInputDiv { display:block; padding-top:15px; padding-bottom:5px; }\
+label#captcha_code_label { margin:0; }\
+input#captcha_code { width:65px; }\
+</style>\
+<!-- end SI CAPTCHA Anti-Spam - comment form style -->\
+";
+jQuery(document).ready(function($) {
+$('head').append(si_captcha_styles);
+});
+//]]>
+</script>
+<script type="text/javascript" src="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/shCore.js"></script>
+<script type="text/javascript" src="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/shBrushXml.js"></script>
+<script type="text/javascript">
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://www.harezmi.com.tr/wp-harezmi/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.83c";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://www.harezmi.com.tr/wp-harezmi/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.83c";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Fırça bulunamadı :';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Firça Html-script seçenegi için yapilandirilmis degil: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type="text/javascript" src="./Hangi SVN Dizin Yapısını Tercih Ediyorsunuz    Harezmi Bilişim Çözümleri_files/jquery.js"></script>
+
+
+</body></html>

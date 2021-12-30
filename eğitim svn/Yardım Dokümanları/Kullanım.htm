@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0049)http://belgeler.org/howto/svn-nasil-kullanim.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="date" content="2007-09-13T16:49:52+02:00"><title>Kullanım</title><link rel="icon" type="image/png" href="http://belgeler.org/images/belgeler-logo.png"><link rel="stylesheet" href="./Kullanım_files/belgeler.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V-special(derived from 1.49 for Turkish Linux Documentation WG by Nilgün Belma Bugüner - nilgun (at) belgeler.gen.tr)"><link rel="home" href="http://belgeler.org/KiTAPLIK/index.html" title="Linux Kitaplığı"><link rel="up" href="http://belgeler.org/howto/svn-nasil.html" title="Subversion Kurulum ve Kullanımı"><link rel="previous" href="http://belgeler.org/howto/svn-nasil-kurulum.html" title="Kurulum"><link rel="next" href="http://belgeler.org/howto/web-organizasyonu.html" title="Web Sitesi Düzenlemesi ve Tasarımı"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><table width="100%" summary="Gezinme Çubuğu" cellpadding="1" cellspacing="0" style="border:1px dotted #999999"><tbody><tr><td><table width="100%" cellpadding="3" cellspacing="0" border="0"><tbody><tr><th colspan="3" align="center">Kullanım</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="http://belgeler.org/howto/svn-nasil-kurulum.html">Önceki</a>&nbsp;</td><th width="60%" align="center">Subversion Kurulum ve Kullanımı</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="http://belgeler.org/howto/web-organizasyonu.html">Sonraki</a></td></tr></tbody></table></td></tr></tbody></table><div class="sect1"> <div class="head2" style="clear: both"><a name="svn-nasil-kullanim" id="svn-nasil-kullanim"></a>Kullanım</div><dl><dd> <div class="head3"><a name="id1" id="id1"></a>Üst Geliştirici Komutları</div><dl><dd><div class="variablelist"><dl><dt><span class="term">Kurulumun doğruluğunun sınanması</span></dt><dd class="varlist"><div class="para">
+Öncelikle, <b><tt>svn --version</tt></b> komutu ile aşağıdaki 3 dosyanın sistemimiz içerisine gerçekten yüklenip yüklenmediğine bakmalıyız.
+      </div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>$ svn --version</tt></b>
+svn, version 1.1.4 (r13838)
+   compiled May 13 2005, 06:29:47
+
+Copyright (C) 2000-2004 CollabNet.
+Subversion is open source software, see http://subversion.tigris.org/
+This product includes software developed by CollabNet (http://www.Collab.Net/).
+
+The following repository access (RA) modules are available:
+
+* ra_dav : Module for accessing a repository via WebDAV (DeltaV) protocol.
+  - handles 'http' schema
+  - handles 'https' schema
+* ra_local : Module for accessing a repository on local disk.
+  - handles 'file' schema
+* ra_svn : Module for accessing a repository using the svn network protocol.
+  - handles 'svn' schema
+</pre></div></div><div class="para">
+Burada <tt>libsvn_ra_local</tt> dosyasının eksik olması BerkeleyDB'nin sisteminizde kurulu olmadığını gösterir.
+      </div></dd><dt><span class="term">Yeni bir deponun oluşturulması</span></dt><dd class="varlist"><div class="para">
+Subversion'a yeni bir depo eklemek için kullanılacak olan komut <b><tt>svnadmin create</tt></b> olmalıdır. Komutun kullanım biçimi:
+      </div><div class="para"><pre class="literallayout"><b><tt>svnadmin&nbsp;create&nbsp;</tt></b><i>depo_adresiniz</i>
+</pre></div><div class="para">Örnek:</div>
+<div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>svnadmin create /home/euler/svnrepo</tt></b>
+</pre></div></div>
+      <div class="para">
+Bu komut ile birlikte <tt>/home/euler/</tt> dizini içerisine <tt>svnrepo</tt> isimli bir dizin açmış olduk.
+Bu dizin bizim subversion depomuz olacak. Burada dikkat edilmesi gereken nokta
+oluşturulacak depo dizini üzerinde okuma/yazma yetkisine sahip olmanız gerekliliğidir.
+      </div><div class="para">
+Projenin tutarlılığı ve subversion'ın ileriki sürümlerinde sorun yaşamamak açısından
+tavsiye edilen dizin yapısıyla devam etmek uygun olacaktır. Projenizin bulunduğu dizin içerisine aşağıdaki dizinleri oluşturun.
+      </div><div class="para">
+Halihazırda yerel sistemimizde geliştirmekte olduğumuz projemizin <tt>/tmp/projem</tt> dizinin altında olduğunu varsayarsak;
+      </div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>cd /tmp/projem</tt></b>
+<tt>$ </tt><b><tt>mkdir trunk branches tags</tt></b>
+</pre></div></div><div class="para">
+Daha sonra tüm proje dosyaları <tt>trunk</tt> dizini altına taşınmalı.
+      </div></dd><dt><span class="term">Depoya yeni projenin eklenmesi</span></dt><dd class="varlist"><div class="para">
+Oluşturduğunuz depoya yeni bir proje eklemek için <b><tt>svn import</tt></b> komutunu kullanmalısınız. Komutun kullanım biçimi:
+      </div><div class="para"><pre class="literallayout"><b><tt>svnadmin&nbsp;import&nbsp;</tt></b><i>/proje_adresiniz&nbsp;file:///depo_adresiniz&nbsp;</i><b><tt>-m&nbsp;</tt></b><i>"bilgilendirme&nbsp;iletisi"</i>
+</pre></div><div class="para">Örnek:</div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>svn import /tmp/projem file:///home/euler/svnrepo -m "ilk projem"</tt></b>
+</pre></div></div><div class="para">
+Eğer aşağıdakine benzer bir çıktı alırsanız herşey yolunda demektir, proje dosyalarınız
+subversion deponuza eklenmiştir.
+      </div><div class="para"><div align="right"><pre class="screen">Adding     /tmp/projem/branches
+Adding     /tmp/projem/tags
+Adding     /tmp/projem/trunk
+Adding     /tmp/projem/trunk/koray.py
+Adding     /tmp/projem/trunk/deneme.txt
+
+Committed revision 1.
+</pre></div></div><div class="para">
+Bu işlem <tt>/tmp/projem</tt> dizinini çalışma dizini haline getirmez; çalışma dizinini sonraki bölümde açıklandığı gibi ayrıca oluşturmalısınız.
+      </div></dd></dl></div></dd></dl> <div class="head3"><a name="id2" id="id2"></a>Geliştirici Komutları</div><dl><dd><div class="variablelist"><dl><dt><span class="term">Çalışma dizininin oluşturulması</span></dt><dd class="varlist"><div class="para">
+Çalışma dizininin oluşturulması ile kastedilen depoda bulunan bir projeyi üzerinde çalışmak için yerele almaktır. Subversion deposu içerisinden üzerinde çalışılacak olan projenin bir kopyasını almak için <b><tt>svn checkout</tt></b> komutu kullanılmalıdır.
+      </div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>svn checkout file:///home/euler/svnrepo/trunk projem</tt></b>
+</pre></div></div><div class="para">
+Artık subversion içerisindeki projenizin bir kopyası bilgisayarınızda. Çalışmalar bu dosyalar
+üzerinden yapılıp işlemler tamamlandıktan sonra tekrar subversion deposuna
+gönderilmeli.
+      </div><div class="note"><table border="0"><tbody><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="" src="./Kullanım_files/note.png"></td><th class="admon">Not</th></tr><tr><td align="left" valign="top" class="admon"><div class="para">
+Bu komut sonrası o an içerisinde bulunduğunuz dizinde <tt>projem</tt> isimli bir dizin oluşacak ve tüm proje içeriği içerisine gelecektir, çalışmalar bu dosyalar üzerinden
+gerçekleştirilecektir.</div></td></tr></tbody></table></div></dd><dt><span class="term">Çalışma dizininin güncellenmesi</span></dt><dd class="varlist"><div class="para">
+Üzerinde çalışmak için aldığınız çalışma kopyanızın güncellenmesi için <b><tt>svn update</tt></b> komutu kullanılır. Siz proje üzerinde çalışırken bir başkası proje dosyalarından bir kaçı üzerinde değişiklik yapmış olabilir, bu komut ile güncel dosyalar sisteminize alınır<sup>[<a name="id61" href="http://belgeler.org/howto/svn-nasil-kullanim.html#ftn.id61" id="id61">61</a>]</sup>:
+      </div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>svn update</tt></b>
+</pre></div></div></dd><dt><span class="term">Dosya ekleme, silme, kopyalama ve taşıma</span></dt><dd class="varlist"><div class="para">
+Depoya yeni bir dosya eklemek için:
+      </div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>svn add dosya</tt></b>
+</pre></div></div><div class="para">
+Depodan bir dosyayı silmek için:
+      </div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>svn delete </tt></b><i>dosya</i>
+</pre></div></div><div class="para">
+Depo içerisinde bir dosyayı kopyalamak için:
+      </div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>svn copy </tt></b><i>dosya1 dosya2</i>
+</pre></div></div><div class="para">
+Depo içerisinde bir dosyayı taşımak ya da yeniden adlandırmak için:
+      </div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>svn move </tt></b><i>dosya1 dosya2</i>
+</pre></div></div></dd><dt><span class="term">Geliştirilen dosyanın depoya teslim edilmesi</span></dt><dd class="varlist"><div class="para">
+<b><tt>svn commit</tt></b> ile çalışma dizinine alınıp üzerinde değişiklik yapılan dosyalar <b><tt>svn commit</tt></b> ile tekrar subvision proje deposuna gönderilir, böylece proje dosyalarının sürüm takibi ve diğer ekip elemanlarının da güncel dosyalar üzerinde çalışması sağlanır. Biçimi:
+      </div><div class="para"><pre class="literallayout"><b><tt>svn&nbsp;commit&nbsp;--message&nbsp;</tt></b><i>"bilgilendirme&nbsp;iletisi"</i>
+</pre></div><div class="para">örnek:</div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>svn commit --message "değişken tiplerindeki hatalar düzeltildi"</tt></b>
+</pre></div></div><div class="para">
+Bu komut ile beraber üzerinde değişiklik yaptığınız tüm dosyalar subversion proje
+deponuza gönderilecektir. <tt>--message</tt> seçeneği ile dosyada yapılan işlemleri kısaca belirten hatırlatıcı bir bilgilendirme iletisi verilmelidir. Aşağıdaki gibi bir çıktı almanız gerekli.
+      </div><div class="para"><div align="right"><pre class="screen">Sending        koray2.txt
+Transmtting file data.
+Committed revision 4.
+</pre></div></div></dd></dl></div></dd></dl> <div class="head3"><a name="id3" id="id3"></a>Diğer yararlı komutlar</div><dl><dd><div class="para">
+En başta da belirtildiği gibi SVN bir nevi <i>zaman makinası</i>dır. Depoya gönderilen her tür dosya için kayıt tutar ve üzerinde çalıştığınız dosyanın önceki sürümlerine erişmenize de olanak sağlar.
+      </div><div class="para">
+Proje üzerinde yapılan değikliklerin listesini almak için:
+      </div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>svn log</tt></b>
+</pre></div></div><div class="para">
+Bir dosya (örn, <tt>koray.py</tt>) üzerinde yapılan değikliklerin listesini almak için:
+      </div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>svn log koray.py</tt></b>
+</pre></div></div><div class="para">
+Dosyaları indirmeden, subversion proje deposu içerisinde hangi dizinde hangi dosyaların yer aldığını görmek için:
+      </div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>svn list http://koray.org/repos/svn</tt></b>
+</pre></div></div><div class="para">
+Böylece projenin tümünün değil de sadece kullanılacak olan dosyaların çalışma dizinine alınması (<b><tt>svn checkout</tt></b>, <b><tt>svn update</tt></b>) olanaklı olur.
+      </div><div class="para"><div align="right"><pre class="screen"><tt>$ </tt><b><tt>svn cleanup</tt></b>
+</pre></div></div><div class="para">
+Subversion <b><tt>commit</tt></b> işlemini güvenli hale getirebilmek için işlemleri bir günlük dosyasına atar öncelikle (mimari olarak günlüklü dosya sistemindekine benzer şekilde). Daha sonra ise bu günlük dosyasından işlemleri okuyarak gerçekleştirir. Son olarak da günlük dosyasını sistemden siler. Günlük dosyasından okuma sırasında oluşabilecek bir sorun (makinanın çökmesi, elektirik sorunları vs..) <b><tt>commit</tt></b> işleminin tamamlanamamasına yol açar ve günlük dosyası sistemde kalır. Günlük dosyası tekrar çalıştırılarak işlemin tamamlanması sağlanabilir. <b><tt>svn cleanup</tt></b> komutu bu işlemi gerçekleştirmeye yarar.
+      </div><div class="para">
+Eğer süreçlerden biri kilitli kalmış ise (<b><tt>svn status</tt></b> çıktısında <tt>L</tt> olarak işaretli olan dosyalar kilitli kalmıştır, dolayısıyla sorun vardır.) <b><tt>svn cleanup</tt></b> komutu çalıştırılır ve sorun çözülür.
+    </div></dd></dl><div class="footnotes"><br><hr width="100" align="left"><div class="footnote"><div class="para"><sup>[<a name="ftn.id61" href="http://belgeler.org/howto/svn-nasil-kullanim.html#id61" id="ftn.id61">61</a>] </sup>Eğer özellikle size ayrılmış bir branşta çalışmıyorsanız, bir dosya üzerinde çalışmaya başlamadan önce çalışma dizininizde bir <b><tt>svn update</tt></b> yapmayı alışkanlık haline getirmelisiniz. (Branşlardan belgenin daha ileri sürümlerinde bahsedilecektir.)</div></div></div></dd></dl></div><div class="eop"></div><table width="100%" summary="Gezinme Çubuğu" cellpadding="1" cellspacing="0" style="border:1px dotted #999999"><tbody><tr><td><table width="100%" cellpadding="3" cellspacing="0" border="0"><tbody><tr><td width="40%" align="left"><a accesskey="p" href="http://belgeler.org/howto/svn-nasil-kurulum.html">Önceki</a>&nbsp;</td><td width="20%" align="center"><a accesskey="u" href="http://belgeler.org/howto/svn-nasil.html">Üst Ana Başlık</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="http://belgeler.org/howto/web-organizasyonu.html">Sonraki</a></td></tr><tr><td width="40%" align="left" valign="top">Kurulum&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="http://belgeler.org/KiTAPLIK/index.html">Başlangıç</a></td><td width="40%" align="right" valign="top">&nbsp;Web Sitesi Düzenlemesi ve Tasarımı</td></tr><tr><td colspan="3" align="center">
+              Bir <a href="http://www.belgeler.org/">Linux Kitaplığı</a> Sayfası
+            </td></tr></tbody></table></td></tr></tbody></table>
+</body></html>
